@@ -36,9 +36,11 @@ public class Cell extends JButton {
     }
 
     public String toString() {
+		
 	String currentState = getText();
-	if (toReturn.substring(0,1).equals("X")) {
-	    return toReturn.substring(0,1);
+	
+	if (currentState.equals("X")) {
+	    return currentState;
 	} else {
 	    return ".";
 	}
